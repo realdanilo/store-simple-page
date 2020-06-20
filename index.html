@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="menu-slider">
+            <span id="menu-selector" onclick="openMenu()">&#x2630;</span>
+        </div>
+        <div class="navbar-brand">
+            <h2>Danilo's Store</h2>
+        </div>
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Store</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="side-menu" id="side-menu">
+        <div class="inner-menu">
+            <span id="close" onclick="closeMenu()">&#x58</span>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Store</a>
+        </div>
+    </div>
+
+    <div class="container-grid">
+        <div class="main-grid">
+            <div class="mask"></div>
+            <h2>Upcoming events</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptate tenetur esse ratione
+                cupiditate commodi.</p>
+            <a href="">Read More</a>
+        </div>
+        <div class="grid-right">
+            <div class="grid-top">
+                <div class="mask"></div>
+
+                <a href="">Read More</a>
+            </div>
+            <div class="grid-bottom">
+                <div class="mask"></div>
+
+                <a href="">Coupons</a>
+            </div>
+        </div>
+    </div>
+    <section id="categories">
+        <div class="category">
+            <h2>Fruits</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, odit? Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Facilis voluptatum neque sint omnis iusto temporibus.</p>
+            <a href="">Shop now</a>
+        </div>
+        <div class="category">
+            <h2>Snacks</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor. Autem, odit?</p>
+            <a href="">Shop now</a>
+        </div>
+        <div class="category">
+            <h2>Drinks</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, odit?Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Pariatur vero itaque reiciendis! Quisquam similique reprehenderit, earum
+                consequatur tempor.</p>
+            <a href="">Shop now</a>
+        </div>
+    </section>
+    <section class="information">
+        <div class="info-left">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam at architecto amet accusamus rerum
+                laboriosam et molestias obcaecati dolore, explicabo ipsum nam nesciunt facere nihil praesentium sint
+                accusantium a. Tenetur?</p>
+            <p class="signature">-Danilo's Team</p>
+        </div>
+        <div class="info-right">
+            <ul>
+                <li>Contact</li>
+                <li>More Services</li>
+                <li>Legal</li>
+                <li>Refund</li>
+            </ul>
+        </div>
+    </section>
+    <!-- script  -->
+    <script>
+        function openMenu() {
+            document.getElementById("side-menu").style.visibility = "visible";
+            document.getElementById("side-menu").style.zIndex = "100";
+        }
+        function closeMenu() {
+            document.getElementById("side-menu").style.visibility = "hidden";
+            document.getElementById("side-menu").style.zIndex = "-100";
+        }
+    </script>
+</body>
+
+</html>
